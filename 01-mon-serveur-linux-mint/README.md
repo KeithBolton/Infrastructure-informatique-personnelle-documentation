@@ -150,7 +150,8 @@ Les archives et espaces de sauvegarde.
 Les fichiers utilisés par les différents services auto-hébergés.
 
 Cette séparation logique facilite l'organisation des données et permet d'envisager des évolutions de capacité sans réinstaller le système d'exploitation.
-<br><br>
+<br>
+<br>
 🔄 **Redondance et protection des données**
 
 Pour la gestion des disques, je privilégie une approche simple et compréhensible, fondée sur des disques indépendants ou des volumes en miroir lorsque la disponibilité des données le justifie.
@@ -193,6 +194,7 @@ L'ajout de nouveaux supports de stockage dépend principalement :
 
 Il est donc possible d'augmenter progressivement la capacité de stockage sans devoir remplacer l'ensemble de l'infrastructure.
 <br>
+
 🌐 **Une architecture orientée Local-First**
 
 Mon installation s'inscrit dans une démarche Local-First, consistant à privilégier l'hébergement et le traitement des données directement sur mon infrastructure.
