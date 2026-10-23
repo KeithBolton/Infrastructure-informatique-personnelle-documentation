@@ -175,7 +175,7 @@ En contrepartie, un miroir de deux disques ne fournit qu'une capacité utile éq
 Je préfère cette approche aux configurations à parité lorsque la simplicité de maintenance et de récupération constitue ma priorité.
 
 **Il est toutefois essentiel de distinguer redondance et sauvegarde : un RAID 1 ne protège pas contre la suppression accidentelle, les erreurs logicielles, les ransomwares ou la destruction de l'ensemble du matériel.**
-<br>
+<br><br>
 🔧 **Une capacité d'extension sans limitation de licence**
 
 L'un des principaux avantages de mon architecture est de ne pas dépendre d'une licence logicielle déterminant le nombre de disques autorisés.
@@ -202,7 +202,7 @@ Mon installation s'inscrit dans une démarche Local-First, consistant à privil�
 Les services peuvent communiquer sur le réseau local, sans nécessiter systématiquement une connexion à des plateformes cloud.
 
 Cette approche permet de conserver davantage de contrôle sur les données, les applications et leur disponibilité.
-<br>
+<br><br>
 🎯 **Objectif de cette architecture**
 
 Mon objectif est de maintenir une infrastructure capable d'évoluer avec mes besoins, sans dépendre d'un matériel NAS spécialisé ou d'un système de licence limitant les extensions.
@@ -235,7 +235,7 @@ La conteneurisation permet notamment de :
 - Faciliter la migration et la restauration des applications.
 
 Certains services, notamment les outils d'intelligence artificielle, sont également installés directement sur le système lorsque cela répond mieux à leurs besoins matériels ou logiciels.
-<br>
+<br><br>
 🤖 **4.1. Intelligence artificielle locale**
 
 L'intelligence artificielle constitue l'un des axes importants de mon infrastructure.
@@ -268,7 +268,7 @@ Développement d'agents IA spécialisés.
 Communication entre les modèles IA et les services auto-hébergés.
 
 L'objectif est de conserver la maîtrise de mes données et de limiter le recours aux services d'intelligence artificielle hébergés dans le cloud.
-<br>
+<br><br>
 ⚙️ **4.2. Automatisation et orchestration**
 
 **n8n — Automatisation des processus**
@@ -290,7 +290,7 @@ Les usages envisagés ou expérimentés comprennent :
 - La création de workflows associant plusieurs agents et outils.
 
 L'auto-hébergement de n8n me permet de conserver le contrôle sur son environnement d'exécution et les données traitées.
-<br>
+<br><br>
 📚 **4.3. Documentation et productivité**
 
 **BookStack — Base documentaire personnelle**
@@ -312,7 +312,7 @@ Ses fonctionnalités comprennent :
 - Stockage des informations dans une base MariaDB.
 
 Cette solution complète mon utilisation de GitHub, davantage orientée vers la documentation publique de mes projets.
-<br>
+<br><br>
 🎵 **4.4. Services multimédias**
 
 Mon serveur héberge également plusieurs applications permettant de gérer et de diffuser des contenus multimédias sur mon réseau local.
@@ -329,7 +329,7 @@ Mon serveur héberge également plusieurs applications permettant de gérer et d
 Ces services me permettent de centraliser mes bibliothèques et d'y accéder depuis différents équipements.
 
 Ils constituent également un terrain d'expérimentation pour la gestion des volumes Docker, des permissions Linux, des montages de disques et des accès réseau.
-<br>
+<br><br>
 🔎 **4.5. Recherche et services web**
 
 **SearXNG — Moteur de recherche auto-hébergé**
@@ -339,7 +339,7 @@ SearXNG est un métamoteur de recherche open source qui agrège les résultats d
 Son auto-hébergement permet de disposer d'une interface de recherche personnalisable et de limiter la dépendance à une interface de recherche commerciale unique.
 
 Il peut également être intégré à des outils d'automatisation ou à certains assistants IA.
-<br>
+<br><br>
 🔐 **4.6. Administration et accès distant**
 
 L'administration de mon infrastructure repose sur plusieurs outils complémentaires.
@@ -354,7 +354,7 @@ L'administration de mon infrastructure repose sur plusieurs outils complémentai
 |Cron|Exécution planifiée de scripts et de sauvegardes|
 
 Cette organisation permet de gérer les applications, consulter les journaux, contrôler les services et intervenir sur le serveur sans nécessiter systématiquement un accès physique.
-<br>
+<br><br>
 🧩 **4.7. Une architecture en constante évolution**
 
 L'un des avantages de cette infrastructure est sa capacité à accueillir de nouveaux services sans nécessiter la mise en place d'un serveur physique supplémentaire pour chaque application.
@@ -376,7 +376,7 @@ Automatisation et scripting.
 Déploiement de modèles d'intelligence artificielle.
 
 Maintenance, diagnostic et résolution d'incidents.
-<br>
+<br><br>
 🎯**Objectif de cette infrastructure**
 
 Mon objectif est de disposer d'un environnement informatique autonome, polyvalent et évolutif, capable de répondre à mes besoins personnels tout en constituant un véritable laboratoire technique.
@@ -405,7 +405,7 @@ Pour cela, je privilégie une approche reposant sur plusieurs principes :
 - Évolutivité : adapter la stratégie de sauvegarde à l'évolution des services et des volumes de données.
 
 Cette organisation s'inscrit dans ma démarche Local-First, qui privilégie le traitement et la conservation des données sur une infrastructure personnelle.
-<br>
+<br><br>
 🔄 **5.1. Syncthing — Synchronisation des fichiers**
 
 Syncthing est une solution open source permettant de synchroniser des fichiers directement entre plusieurs équipements.
@@ -431,7 +431,7 @@ Syncthing constitue ainsi une solution intéressante pour maintenir des fichiers
 Point important : la synchronisation ne remplace pas une sauvegarde. Une suppression ou une modification accidentelle peut également être propagée aux autres appareils.
 
 La gestion des versions et les sauvegardes indépendantes restent donc nécessaires pour protéger les données.
-<br>
+<br><br>
 🐳 **5.2. Sauvegarde des applications Docker**
 
 Les applications conteneurisées nécessitent une attention particulière concernant la conservation de leurs données.
@@ -453,7 +453,7 @@ Les éléments concernés comprennent notamment :
 Cette distinction entre conteneurs et données persistantes facilite la maintenance, les mises à jour et la restauration des applications.
 
 Pour les bases de données, une sauvegarde cohérente nécessite généralement un export adapté ou un mécanisme garantissant leur intégrité, plutôt qu'une simple copie de fichiers pendant leur utilisation.
-<br>
+<br><br>
 📚 **5.3. BookStack — Sauvegardes automatisées et chiffrées**
 
 Mon installation BookStack repose sur une architecture Docker associant l'application à une base de données MariaDB.
@@ -475,7 +475,7 @@ Caractéristiques de cette sauvegarde :
 L'objectif est de conserver les informations nécessaires à la restauration de la documentation en cas de dysfonctionnement, de mauvaise manipulation ou de perte de données.
 
 Cette automatisation permet également de limiter les oublis liés aux sauvegardes manuelles.
-<br>
+<br><br>
 🗄️ **5.4. Stockage et redondance**
 
 Pour la protection des données, je privilégie une organisation simple, fondée sur des disques indépendants et, lorsque cela est pertinent, des volumes en miroir RAID 1.
@@ -495,7 +495,7 @@ Cependant, la redondance n'est pas une sauvegarde.
 Je préfère privilégier des solutions simples à administrer plutôt que des architectures complexes utilisant systématiquement des mécanismes de parité.
 
 Le choix dépend toutefois de l'importance des données, de leur volume et des besoins de disponibilité.
-<br>
+<br><br>
 🔐 **5.5. Sécurité et confidentialité des sauvegardes**
 
 La protection des données ne se limite pas à leur duplication.
@@ -515,7 +515,7 @@ Une stratégie de sauvegarde doit également prendre en compte :
 Une sauvegarde n'est réellement utile que si elle peut être restaurée.
 
 C'est pourquoi les tests de restauration constituent une étape importante dans la fiabilisation d'une infrastructure.
-<br>
+<br><br>
 📈 **5.6. Évolutions envisagées**
 
 Plusieurs améliorations peuvent renforcer progressivement cette organisation :
@@ -537,7 +537,7 @@ Plusieurs améliorations peuvent renforcer progressivement cette organisation :
 L'objectif à terme est de se rapprocher d'une stratégie 3-2-1 : trois copies des données, sur deux types de supports, dont une copie conservée hors site.
 
 Cette approche reste un objectif d'amélioration et non une configuration que je considère comme déjà entièrement déployée.
-<br>
+<br><br>
 🎯 **Objectif de cette organisation**
 
 Je cherche à construire une stratégie de sauvegarde fiable, automatisée, compréhensible et adaptée à mes besoins, sans complexité inutile.
@@ -570,7 +570,7 @@ Cette démarche repose sur plusieurs principes :
 - Automatisation : utilisation de scripts et de tâches planifiées pour réduire les interventions répétitives.
 
 - Local-First : priorité aux communications locales et limitation des dépendances aux services cloud.
-<br>
+<br><br>
 🖥️ **6.1. Administration locale et distante**
 
 L'administration du serveur s'effectue à travers plusieurs méthodes complémentaires.
@@ -611,7 +611,7 @@ RustDesk constitue une solution complémentaire pour les opérations nécessitan
 Cet outil permet notamment de prendre le contrôle du bureau Linux à distance, d'intervenir sur des applications graphiques et de réaliser certaines opérations de maintenance.
 
 Il représente une alternative intéressante aux solutions de bureau distant propriétaires, notamment grâce à ses possibilités d'auto-hébergement.
-<br>
+<br><br>
 🛡️ **6.2. Pare-feu et sécurité réseau**
 
 La sécurisation des communications réseau repose notamment sur UFW (Uncomplicated Firewall), l'interface simplifiée de gestion du pare-feu Linux.
@@ -635,7 +635,7 @@ Les applications auto-hébergées utilisent différents ports réseau, notamment
 L'objectif est de n'autoriser que les communications réellement nécessaires.
 
 Un point de vigilance concerne Docker : les ports publiés par les conteneurs peuvent contourner certaines règles UFW classiques. Leur exposition doit donc être contrôlée également au niveau de Docker, des interfaces d'écoute et du pare-feu réseau.
-<br>
+<br><br>
 👤 **6.3. Gestion des utilisateurs et des permissions**
 
 Linux dispose d'un système de permissions permettant de contrôler l'accès aux fichiers, répertoires et ressources.
@@ -657,7 +657,7 @@ Ces mécanismes sont particulièrement importants pour les applications Docker q
 Une mauvaise configuration des permissions peut provoquer des erreurs d'accès, empêcher l'écriture des données ou exposer inutilement certains fichiers.
 
 Je privilégie donc une organisation dans laquelle chaque application dispose des accès nécessaires à son fonctionnement, sans lui attribuer systématiquement des privilèges élevés.
-<br>
+<br><br>
 🐳 **6.4. Administration et maintenance Docker**
 
 Docker occupe une place importante dans mon infrastructure.
@@ -685,7 +685,7 @@ La séparation entre les applications conteneurisées et le système hôte facil
 Cependant, la conteneurisation ne constitue pas à elle seule une garantie de sécurité.
 
 Il reste nécessaire de contrôler les privilèges des conteneurs, les montages de volumes, les secrets applicatifs, les images utilisées et les services exposés sur le réseau.
-<br>
+<br><br>
 📊 **6.5. Surveillance et diagnostic**
 
 L'administration d'un serveur nécessite de pouvoir identifier rapidement les dysfonctionnements.
@@ -715,7 +715,7 @@ Ces outils permettent notamment de diagnostiquer :
 - Un conteneur Docker en échec.
 
 Cette approche permet de comprendre l'origine d'un problème plutôt que de simplement redémarrer l'ensemble du serveur.
-<br>
+<br><br>
 🔄 **6.6. Mises à jour et maintenance**
 
 La maintenance du serveur comprend la gestion des mises à jour du système et des applications.
@@ -733,7 +733,7 @@ Une maintenance maîtrisée implique également :
 - La possibilité de restaurer une configuration précédente en cas de problème.
 
 Je privilégie une démarche progressive afin de limiter les interruptions de service.
-<br>
+<br><br>
 ⚙️ **6.7. Automatisation des tâches d'administration**
 
 L'automatisation constitue un autre aspect important de mon installation.
@@ -752,7 +752,7 @@ Cette approche peut également être appliquée à :
 - L'envoi de notifications en cas d'anomalie.
 
 L'objectif est de réduire les tâches répétitives tout en conservant une visibilité sur les opérations effectuées.
-<br>
+<br><br>
 🔒 **6.8. Améliorations de sécurité envisagées**
 
 La sécurisation d'une infrastructure est un processus continu.
@@ -770,7 +770,7 @@ Plusieurs améliorations peuvent être envisagées pour renforcer progressivemen
 - Étudier la segmentation réseau pour isoler certains services.
 
 Ces évolutions permettraient d'améliorer la disponibilité, la traçabilité et la sécurité globale du serveur.
-<br>
+<br><br>
 🎯 **Objectif de cette administration**
 
 Mon objectif est de disposer d'une infrastructure Linux que je peux administrer, maintenir, diagnostiquer et faire évoluer de manière autonome.
@@ -797,7 +797,7 @@ L'un des principaux avantages de mon serveur DIY est sa capacité à évoluer pr
 Initialement orienté vers le stockage et l'auto-hébergement, mon serveur s'est progressivement transformé en une plateforme polyvalente intégrant des applications Docker, des outils d'automatisation et de l'intelligence artificielle locale.
 
 Plusieurs évolutions matérielles et logicielles sont envisagées afin d'améliorer ses performances, sa fiabilité et ses possibilités d'utilisation.
-<br>
+<br><br>
 🧠 **7.1. Augmentation de la mémoire RAM**
 
 Mon serveur dispose actuellement de 16 Go de mémoire DDR4.
@@ -815,7 +815,7 @@ Les objectifs sont notamment :
 - Conserver une marge pour les futurs services.
 
 Cette évolution nécessitera également de vérifier la compatibilité des barrettes, leur fréquence de fonctionnement et la stabilité de l'ensemble.
-<br>
+<br><br>
 🎮 **7.2. Évolution de la carte graphique pour l'IA locale**
 
 Le serveur utilise actuellement une AMD Radeon RX 6600 XT disposant de 8 Go de VRAM.
@@ -841,7 +841,7 @@ Cette évolution permettrait notamment :
 - D'expérimenter davantage de solutions d'intelligence artificielle générative.
 
 Le choix définitif dépendra des performances réelles sous Linux, de la compatibilité avec les moteurs d'inférence utilisés et du budget disponible.
-<br>
+<br><br>
 🤖**7.3. Développement d'une architecture multi-agents IA**
 
 L'un de mes projets les plus importants consiste à développer une architecture d'intelligence artificielle locale composée de plusieurs agents spécialisés.
@@ -872,7 +872,7 @@ L'architecture s'appuie sur plusieurs composants déjà présents sur mon serveu
 Le développement est réalisé progressivement, avec une approche modulaire : chaque fonctionnalité est conçue, testée et validée avant l'intégration de la suivante.
 
 À terme, l'objectif est de disposer d'un assistant personnel évolutif, capable d'utiliser différents outils tout en conservant les traitements et les données localement autant que possible.
-<br>
+<br><br>
 🖼️ **7.4. Génération d'images et de contenus multimédias**
 
 Une autre évolution envisagée concerne l'intégration d'outils d'intelligence artificielle générative dédiés aux images.
@@ -888,7 +888,7 @@ L'objectif est de disposer d'une interface locale permettant de :
 Des solutions telles que InvokeAI ou ComfyUI font partie des outils étudiés.
 
 Ces usages restent secondaires par rapport aux modèles conversationnels et aux agents IA, mais représentent un axe d'expérimentation intéressant.
-<br>
+<br><br>
 💾 **7.5. Extension des capacités de stockage**
 
 Mon architecture permet d'envisager l'ajout progressif de nouveaux disques selon l'évolution des besoins.
@@ -908,7 +908,7 @@ Les principales pistes sont :
 L'objectif est de conserver une architecture simple à administrer, sans imposer systématiquement des configurations RAID complexes.
 
 Les extensions resteront conditionnées aux possibilités matérielles de la carte mère, du boîtier, de l'alimentation et des éventuels contrôleurs supplémentaires.
-<br>
+<br><br>
 🔐 **7.6. Renforcement de la sécurité et de la supervision**
 
 L'évolution de l'infrastructure doit également s'accompagner d'une amélioration progressive de sa sécurité et de sa fiabilité.
@@ -924,7 +924,7 @@ Plusieurs axes sont envisagés :
 - Sécurisation des communications entre applications et agents IA.
 
 L'objectif est de pouvoir détecter plus rapidement les anomalies, faciliter les interventions et limiter les interruptions de service.
-<br>
+<br><br>
 📚 **7.7. Documentation et partage d'expérience**
 
 Enfin, une évolution importante de ce projet concerne sa documentation.
